@@ -64,6 +64,16 @@ winner = max(khan_votes, li_votes, correy_votes, tooley_votes)
 if winner == khan_votes:
     name = "Khan"
 
+elif winner == li_votes:
+    name = "Li"
+
+elif winner == correy_votes:
+    name = "Correy"
+
+else:
+    name = "O'Tooley "
+
+
 
 print("Election Results")
 print("--------------------------")
@@ -78,7 +88,7 @@ print(f"Winner: {name}")
 print("--------------------------")
 
  #Set up Output File
-output_file = os.path('..','Resources','election_data_results.text')
+output_file = os.path.join('..','Resources','election_data_results.text')
 
 with open(output_file,"w",) as newfile:
 

@@ -78,7 +78,7 @@ print(f"Greatest Increase in Profits:, {largest_increase_month}, (${highest_prof
 print(f"Greatest Decrease in Profits:, {largest_decrease_month}, (${lowest_loss})")
 
 # Set up Output File
-output_file = os.path('..','Resources','budget_analysis.text')
+output_file = os.path.join('..','Resources','budget_analysis.txt')
 
 with open(output_file,"w",) as newfile:
 
